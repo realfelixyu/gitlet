@@ -1,0 +1,35 @@
+#resetting
+> init
+<<<
+E .gitlet
+> branch other
+<<<
++ a.txt wug.txt
++ b.txt notwug.txt
+> add b.txt
+<<<
+> add a.txt
+<<<
+> commit "Main two files"
+<<<
+E a.txt
+E b.txt
+> checkout other
+<<<
+* a.txt
+* b.txt
++ a.txt notwug.txt
+> add a.txt
+<<<
+> commit "Alternative file"
+<<<
+= a.txt notwug.txt
+* b.txt
+> checkout master
+<<<
+= a.txt wug.txt
+= b.txt notwug.txt
+> checkout other
+<<<
+= a.txt notwug.txt
+* b.txt
